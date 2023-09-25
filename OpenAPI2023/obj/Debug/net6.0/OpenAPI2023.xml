@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OpenAPI2023</name>
+    </assembly>
+    <members>
+        <member name="M:OpenAPI2023.Controllers.ProfessorsController.GetProfessors">
+            <summary>
+            Gets all the professors.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OpenAPI2023.Services.ICrudService`2.GetAllAsync">
+            <summary>
+            Gets all the instances of <typeparamref name="TEntity"/> in the database. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OpenAPI2023.Services.ICrudService`2.GetByIdAsync(`1)">
+            <summary>
+            Gets a specific <typeparamref name="TEntity"/> by its ID.
+            </summary>
+            <param name="id"></param>
+            <exception cref="T:OpenAPI2023.Data.Exceptions.EntityNotFoundException"></exception>
+            <returns></returns>
+        </member>
+        <member name="M:OpenAPI2023.Services.ICrudService`2.AddAsync(`0)">
+            <summary>
+            Adds an <typeparamref name="TEntity"/> to the database.
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OpenAPI2023.Services.ICrudService`2.UpdateAsync(`0)">
+            <summary>
+            Updates a <typeparamref name="TEntity"/> in the database with new values.
+            It is a full replace, any null fields will be updated to null in the database.
+            This also does not add/update related entities to the database.
+            </summary>
+            <param name="obj"></param>
+            <exception cref="T:OpenAPI2023.Data.Exceptions.EntityNotFoundException"></exception>
+            <returns></returns>
+        </member>
+        <member name="M:OpenAPI2023.Services.ICrudService`2.DeleteByIdAsync(`1)">
+            <summary>
+            Deletes an <typeparamref name="TEntity"/> by their ID.
+            </summary>
+            <param name="id"></param>
+            <exception cref="T:OpenAPI2023.Data.Exceptions.EntityNotFoundException"></exception>
+            <returns></returns>
+        </member>
+        <member name="M:OpenAPI2023.Services.Professors.IProfessorService.UpdateStudentsAsync(System.Int32,System.Int32[])">
+            <summary>
+            Updates the students for a professor.
+            This is a complete replacement for the related students and needs to include all students.
+            Business rule: A professor can supervise at most 5 students at a time.
+            </summary>
+            <param name="professorId"></param>
+            <param name="studentIds"></param>
+            <returns></returns>
+            <exception cref="T:System.EntryPointNotFoundException"></exception>
+            <exception cref="T:OpenAPI2023.Data.Exceptions.EntityValidationException"></exception>
+        </member>
+        <member name="M:OpenAPI2023.Services.Professors.IProfessorService.UpdateSubjectsAsync(System.Int32,System.Int32[])">
+            <summary>
+            Updates the subjects for a professor.
+            This is a complete replacement for the related subjects and needs to include all subjects.
+            Business rule: A professor can teach at most 3 subjects at a time.
+            </summary>
+            <param name="professorId"></param>
+            <param name="subjectIds"></param>
+            <returns></returns>
+            <exception cref="T:System.EntryPointNotFoundException"></exception>
+            <exception cref="T:OpenAPI2023.Data.Exceptions.EntityValidationException"></exception>
+        </member>
+        <member name="M:OpenAPI2023.Services.Professors.IProfessorService.GetSubjectsAsync(System.Int32)">
+            <summary>
+            Gets the subjects for a professor. 
+            If there are no subjects, no exception is thrown, an empty set is returned.
+            </summary>
+            <param name="id"></param>
+            <exception cref="T:OpenAPI2023.Data.Exceptions.EntityNotFoundException"></exception>
+            <returns></returns>
+        </member>
+        <member name="M:OpenAPI2023.Services.Professors.IProfessorService.GetStudentsAsync(System.Int32)">
+            <summary>
+            Gets the students for a professor. 
+            If there are no students, no exception is thrown, an empty set is returned.
+            </summary>
+            <param name="id"></param>
+            <exception cref="T:OpenAPI2023.Data.Exceptions.EntityNotFoundException"></exception>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

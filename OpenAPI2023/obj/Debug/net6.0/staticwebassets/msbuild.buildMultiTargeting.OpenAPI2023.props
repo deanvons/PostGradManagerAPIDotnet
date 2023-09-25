@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\OpenAPI2023.props" />
+</Project>
