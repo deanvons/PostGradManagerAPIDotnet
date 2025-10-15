@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OpenAPI2023")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+260dab663c36fafb0ed959494f5eeebf2f5d2185")]
 [assembly: System.Reflection.AssemblyProductAttribute("OpenAPI2023")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OpenAPI2023")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

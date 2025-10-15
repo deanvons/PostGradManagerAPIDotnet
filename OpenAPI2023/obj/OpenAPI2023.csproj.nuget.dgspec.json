@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\noro-nle\\source\\repos\\OpenAPI2023\\OpenAPI2023\\OpenAPI2023.csproj": {}
+    "C:\\Users\\DrDeanvonSchoultz\\source\\repos\\Backend\\.NET\\module-3\\reference-code\\openapi2023\\OpenAPI2023\\OpenAPI2023.csproj": {}
   },
   "projects": {
-    "C:\\Users\\noro-nle\\source\\repos\\OpenAPI2023\\OpenAPI2023\\OpenAPI2023.csproj": {
+    "C:\\Users\\DrDeanvonSchoultz\\source\\repos\\Backend\\.NET\\module-3\\reference-code\\openapi2023\\OpenAPI2023\\OpenAPI2023.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\noro-nle\\source\\repos\\OpenAPI2023\\OpenAPI2023\\OpenAPI2023.csproj",
+        "projectUniqueName": "C:\\Users\\DrDeanvonSchoultz\\source\\repos\\Backend\\.NET\\module-3\\reference-code\\openapi2023\\OpenAPI2023\\OpenAPI2023.csproj",
         "projectName": "OpenAPI2023",
-        "projectPath": "C:\\Users\\noro-nle\\source\\repos\\OpenAPI2023\\OpenAPI2023\\OpenAPI2023.csproj",
-        "packagesPath": "C:\\Users\\noro-nle\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\noro-nle\\source\\repos\\OpenAPI2023\\OpenAPI2023\\obj\\",
+        "projectPath": "C:\\Users\\DrDeanvonSchoultz\\source\\repos\\Backend\\.NET\\module-3\\reference-code\\openapi2023\\OpenAPI2023\\OpenAPI2023.csproj",
+        "packagesPath": "C:\\Users\\DrDeanvonSchoultz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DrDeanvonSchoultz\\source\\repos\\Backend\\.NET\\module-3\\reference-code\\openapi2023\\OpenAPI2023\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\noro-nle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DrDeanvonSchoultz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,7 +38,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net6.0": {
@@ -76,6 +86,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -84,7 +112,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305\\RuntimeIdentifierGraph.json"
         }
       }
     }

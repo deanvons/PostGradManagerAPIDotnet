@@ -129,6 +129,12 @@ namespace OpenAPI2023.Controllers
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="students"></param>
+        /// <returns></returns>
         [HttpPut("{id}/students")]
         public async Task<IActionResult> UpdateStudents(int id, [FromBody] int[] students)
         {
